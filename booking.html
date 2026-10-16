@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book your date — Sanad Events | Jeddah</title>
+<meta name="description" content="Book Sanad for your event in Jeddah or anywhere in Saudi Arabia. Tell us the date, guest count and services, and get a working cost range immediately.">
+<meta name="theme-color" content="#0b0b0f">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700;800&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body class="page-booking">
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+<div class="progress" aria-hidden="true"><span class="progress__bar" data-progress></span></div>
+
+<header class="nav" data-nav>
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html" aria-label="Sanad — home">
+      <span class="nav__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path d="M14 40V26a10 10 0 0 1 20 0v14" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M20.5 40V26a3.5 3.5 0 0 1 7 0v14" fill="none" stroke="currentColor" stroke-width="2" opacity=".55"/>
+          <path d="M9 41h30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M24 5.5l2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8z" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="nav__brandtext">
+        <strong>SANAD</strong>
+        <small data-i18n="nav.tagline">Event Planning &amp; Supply</small>
+      </span>
+    </a>
+
+    <nav class="nav__panel" id="nav-panel" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html#about" data-i18n="nav.about">About</a></li>
+        <li><a class="nav__link" href="index.html#services" data-i18n="nav.services">Services</a></li>
+        <li><a class="nav__link" href="index.html#supply" data-i18n="nav.supply">Supply</a></li>
+        <li><a class="nav__link" href="index.html#work" data-i18n="nav.work">Portfolio</a></li>
+        <li><a class="nav__link" href="index.html#packages" data-i18n="nav.packages">Packages</a></li>
+        <li><a class="nav__link" href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      <div class="nav__mobileactions">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" class="lang__btn is-active" data-lang="en">EN</button>
+          <button type="button" class="lang__btn" data-lang="ar">ع</button>
+        </div>
+        <a class="btn btn--ghost btn--block" href="index.html#packages" data-i18n="nav.packages">Packages</a>
+      </div>
+    </nav>
+
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" class="lang__btn is-active" data-lang="en">EN</button>
+        <button type="button" class="lang__btn" data-lang="ar">ع</button>
+      </div>
+      <a class="btn btn--ghost btn--sm" href="tel:+966507446780" dir="ltr">+966 50 744 6780</a>
+      <button type="button" class="nav__toggle" data-navtoggle aria-expanded="false" aria-controls="nav-panel" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="bk-hero">
+    <div class="bk-hero__bg" aria-hidden="true">
+      <span class="hero__orb hero__orb--a"></span>
+      <span class="hero__orb hero__orb--b"></span>
+      <img class="bk-hero__photo" src="assets/img/hero-hall.svg" alt="" aria-hidden="true" width="1600" height="900" decoding="async">
+      <span class="hero__pattern"></span>
+    </div>
+    <div class="shell">
+      <p class="eyebrow reveal" data-i18n="bk.eyebrow">Booking form · 4 minutes · no obligation</p>
+      <h1 class="bk-hero__title" data-split data-i18n="bk.title">Book Sanad</h1>
+      <p class="bk-hero__lede reveal" data-i18n="bk.lede">Six short steps. The cost range on the right updates as you type, so you leave with a working number even before we reply. Nothing is confirmed until a producer signs the production sheet.</p>
+      <ul class="bk-hero__facts reveal">
+        <li><strong>1</strong><span data-i18n="bk.f1">Working day reply</span></li>
+        <li><strong>24h</strong><span data-i18n="bk.f2">Written quote</span></li>
+        <li><strong>5</strong><span data-i18n="bk.f3">Working days to concept</span></li>
+        <li><strong>0</strong><span data-i18n="bk.f4">Obligation to book</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="shell bk-layout">
+    <div class="bk-main">
+
+      <!-- ===== wizard ===== -->
+      <p class="sr-only" role="status" aria-live="polite" data-live></p>
+
+      <nav class="wizard" aria-label="Booking progress">
+        <span class="wizard__bar" aria-hidden="true"><span class="wizard__fill" data-wizard-fill></span></span>
+        <ol class="wizard__steps" data-wizard-steps>
+          <li><button type="button" class="wizard__step is-active" data-goto="0"><span class="wizard__dot">1</span><span class="wizard__label" data-i18n="bk.s1">Basics</span></button></li>
+          <li><button type="button" class="wizard__step" data-goto="1"><span class="wizard__dot">2</span><span class="wizard__label" data-i18n="bk.s2">Date &amp; venue</span></button></li>
+          <li><button type="button" class="wizard__step" data-goto="2"><span class="wizard__dot">3</span><span class="wizard__label" data-i18n="bk.s3">Services</span></button></li>
+          <li><button type="button" class="wizard__step" data-goto="3"><span class="wizard__dot">4</span><span class="wizard__label" data-i18n="bk.s4">Contact</span></button></li>
+          <li><button type="button" class="wizard__step" data-goto="4"><span class="wizard__dot">5</span><span class="wizard__label" data-i18n="bk.s5">Review</span></button></li>
+        </ol>
+      </nav>
+
+      <form class="form" data-form novalidate>
+        <p class="form__saved" data-draft-note hidden data-i18n="bk.draft">Draft restored from this device.</p>
+
+        <!-- ===== STEP 1 ===== -->
+        <section class="panel is-active" id="step-basics" data-panel="0" aria-labelledby="p0h">
+          <header class="panel__head">
+            <span class="panel__num">01</span>
+            <div>
+              <h2 class="panel__title" id="p0h" data-i18n="bk.p1.t">The basics</h2>
+              <p class="panel__hint" data-i18n="bk.p1.h">What are we producing, and how big is it?</p>
+            </div>
+          </header>
+
+          <fieldset class="fieldset">
+            <legend class="legend" data-i18n="bk.f.type">Event type <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices choices--grid">
+              <label class="choice"><input type="radio" name="eventType" value="wedding" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 20h16M6 20V9l6-5 6 5v11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="choice__text" data-i18n="bk.t.wedding">Wedding</span></span></label>
+              <label class="choice"><input type="radio" name="eventType" value="engagement" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l2.5 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="choice__text" data-i18n="bk.t.engagement">Engagement / qatran</span></span></label>
+              <label class="choice"><input type="radio" name="eventType" value="corporate" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 20h16M6 20V7h12v13M10 7V4h4v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="choice__text" data-i18n="bk.t.corporate">Corporate</span></span></label>
+              <label class="choice"><input type="radio" name="eventType" value="exhibition" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M3 20h18M5 20v-8l7-4 7 4v8M9 20v-4h6v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="choice__text" data-i18n="bk.t.exhibition">Exhibition / booth</span></span></label>
+              <label class="choice"><input type="radio" name="eventType" value="social" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 20h14M7 20v-6a5 5 0 0 1 10 0v6M12 5v3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="choice__text" data-i18n="bk.t.social">Social / family</span></span></label>
+              <label class="choice"><input type="radio" name="eventType" value="conference" required><span class="choice__box"><span class="choice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="11" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="choice__text" data-i18n="bk.t.conference">Conference</span></span></label>
+            </div>
+            <p class="field__error" data-error-for="eventType"></p>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="eventTitle"><span data-i18n="bk.f.title">Occasion or company name</span> <span class="req" aria-hidden="true">*</span></label>
+            <input class="input" id="eventTitle" name="eventTitle" type="text" required autocomplete="off" maxlength="80" placeholder="e.g. Al Rashed &amp; Sayed wedding">
+            <p class="field__hint" data-i18n="bk.f.titleh">Whatever you would like printed on the production sheet.</p>
+            <p class="field__error" data-error-for="eventTitle"></p>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="package"><span data-i18n="bk.f.package">Package</span> <span class="req" aria-hidden="true">*</span></label>
+              <select class="input input--select" id="package" name="package" required>
+                <option value="signature">Signature — from SAR 12,000</option>
+                <option value="royal" selected>Royal — from SAR 28,000</option>
+                <option value="bespoke">Bespoke — from SAR 60,000</option>
+                <option value="supply">Supply only — from SAR 6,000</option>
+              </select>
+              <p class="field__error" data-error-for="package"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="guests"><span data-i18n="bk.f.guests">Expected guests</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="guests" name="guests" type="number" required min="10" max="4000" step="10" inputmode="numeric" value="250">
+              <input class="range" id="guestsRange" name="guestsRange" type="range" min="10" max="2000" step="10" value="250" aria-label="Guest count slider">
+              <p class="field__error" data-error-for="guests"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="brief"><span data-i18n="bk.f.brief">What is the occasion about?</span></label>
+            <textarea class="input input--area" id="brief" name="brief" rows="3" maxlength="400" data-counter-for="briefCount" placeholder="A short paragraph is enough."></textarea>
+            <p class="field__hint"><span data-i18n="bk.f.chars">Characters</span>: <span id="briefCount">0</span>/400</p>
+          </div>
+        </section>
+
+        <!-- ===== STEP 2 ===== -->
+        <section class="panel" id="step-when" data-panel="1" aria-labelledby="p1h" hidden>
+          <header class="panel__head">
+            <span class="panel__num">02</span>
+            <div>
+              <h2 class="panel__title" id="p1h" data-i18n="bk.p2.t">Date &amp; venue</h2>
+              <p class="panel__hint" data-i18n="bk.p2.h">Dates we already hold are shown greyed out. Minimum lead time is 21 days.</p>
+            </div>
+          </header>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="eventDate"><span data-i18n="bk.f.date">Event date</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="eventDate" name="eventDate" type="date" required>
+              <p class="field__note" data-advisory hidden></p>
+              <p class="field__error" data-error-for="eventDate"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="flexible"><span data-i18n="bk.f.flex">Date flexibility</span></label>
+              <select class="input input--select" id="flexible" name="flexible">
+                <option value="fixed" data-i18n="bk.f.f1">Fixed date</option>
+                <option value="plusminus" data-i18n="bk.f.f2">± 3 days</option>
+                <option value="week" data-i18n="bk.f.f3">Any weekend that month</option>
+                <option value="month" data-i18n="bk.f.f4">Just the month</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="startTime"><span data-i18n="bk.f.start">Guest arrival</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="startTime" name="startTime" type="time" required value="19:30">
+              <p class="field__error" data-error-for="startTime"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="endTime"><span data-i18n="bk.f.end">Wrap-up</span></label>
+              <input class="input" id="endTime" name="endTime" type="time" value="23:30">
+              <p class="field__error" data-error-for="endTime"></p>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend class="legend"><span data-i18n="bk.f.city">City</span> <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices choices--row">
+              <label class="choice"><input type="radio" name="city" value="jeddah" required><span class="choice__box"><span class="choice__text">Jeddah</span></span></label>
+              <label class="choice"><input type="radio" name="city" value="makkah"><span class="choice__box"><span class="choice__text">Makkah</span></span></label>
+              <label class="choice"><input type="radio" name="city" value="dammam"><span class="choice__box"><span class="choice__text">Dammam</span></span></label>
+              <label class="choice"><input type="radio" name="city" value="riyadh"><span class="choice__box"><span class="choice__text">Riyadh</span></span></label>
+              <label class="choice"><input type="radio" name="city" value="other"><span class="choice__box"><span class="choice__text" data-i18n="bk.f.other">Other</span></span></label>
+            </div>
+            <p class="field__error" data-error-for="city"></p>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="venue"><span data-i18n="bk.f.venue">Venue</span></label>
+            <input class="input" id="venue" name="venue" type="text" maxlength="120" placeholder="Hotel, compound, hall, or ‘not decided’">
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="venueType"><span data-i18n="bk.f.vtype">Venue type</span></label>
+              <select class="input input--select" id="venueType" name="venueType">
+                <option value="hotel" data-i18n="bk.f.v1">Hotel ballroom</option>
+                <option value="villa" data-i18n="bk.f.v2">Villa / compound</option>
+                <option value="outdoor" data-i18n="bk.f.v3">Open field / beach</option>
+                <option value="industrial" data-i18n="bk.f.v4">Warehouse / industrial</option>
+                <option value="expo" data-i18n="bk.f.v5">Expo or conference centre</option>
+                <option value="restaurant" data-i18n="bk.f.v6">Restaurant / lounge</option>
+                <option value="undecided" data-i18n="bk.f.v7">Still deciding</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field__label" for="setting"><span data-i18n="bk.f.setting">Setting</span></label>
+              <select class="input input--select" id="setting" name="setting">
+                <option value="indoor" data-i18n="bk.f.s1">Indoor</option>
+                <option value="outdoor" data-i18n="bk.f.s2">Outdoor</option>
+                <option value="mixed" data-i18n="bk.f.s3">Both / covered</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="budget"><span data-i18n="bk.f.budget">Budget band for production</span></label>
+            <select class="input input--select" id="budget" name="budget">
+              <option value="under25" data-i18n="bk.f.b1">Under SAR 25,000</option>
+              <option value="25-60" selected data-i18n="bk.f.b2">SAR 25,000 – 60,000</option>
+              <option value="60-120" data-i18n="bk.f.b3">SAR 60,000 – 120,000</option>
+              <option value="120-300" data-i18n="bk.f.b4">SAR 120,000 – 300,000</option>
+              <option value="300plus" data-i18n="bk.f.b5">SAR 300,000+</option>
+              <option value="unsure" data-i18n="bk.f.b6">Not sure yet</option>
+            </select>
+            <p class="field__hint" data-i18n="bk.f.budgeth">A range is fine. We tell you honestly whether the idea fits inside it.</p>
+          </div>
+        </section>
+
+        <!-- ===== STEP 3 ===== -->
+        <section class="panel" id="step-services" data-panel="2" aria-labelledby="p2h" hidden>
+          <header class="panel__head">
+            <span class="panel__num">03</span>
+            <div>
+              <h2 class="panel__title" id="p2h" data-i18n="bk.p3.t">Services &amp; supplies</h2>
+              <p class="panel__hint" data-i18n="bk.p3.h">Tick what you know you want. Leave the rest blank and we will propose it.</p>
+            </div>
+          </header>
+
+          <fieldset class="fieldset">
+            <legend class="legend"><span data-i18n="bk.f.services">Core services</span> <span class="req" aria-hidden="true">*</span></legend>
+            <div class="choices choices--grid">
+              <label class="choice"><input type="checkbox" name="services" value="planning" data-price="6500"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.planning">Full planning &amp; production</span><span class="choice__meta" data-i18n="bk.svc.planningm">Concept to strike</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="decor" data-price="5200"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.decor">Décor, floral &amp; styling</span><span class="choice__meta" data-i18n="bk.svc.decorm">Backdrops, tables, lounge</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="av" data-price="7800" checked><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.av">Stage, sound &amp; lighting</span><span class="choice__meta" data-i18n="bk.svc.avm">Show control, PA, truss</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="marquee" data-price="9800"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.marquee">Marquee &amp; climate</span><span class="choice__meta" data-i18n="bk.svc.marqueem">Clear-span, cooling, power</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="furniture" data-price="3800" checked><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.furniture">Furniture &amp; tableware supply</span><span class="choice__meta" data-i18n="bk.svc.furniturem">Chairs, linen, glassware</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="catering" data-price="3400"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.catering">Catering coordination</span><span class="choice__meta" data-i18n="bk.svc.cateringm">Timings, cold chain, service</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="staffing" data-price="12" data-per-guest="1"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.staffing">Staffing &amp; hospitality</span><span class="choice__meta" data-i18n="bk.svc.staffingm">SAR 12 per guest</span></span></label>
+              <label class="choice"><input type="checkbox" name="services" value="exhibition" data-price="14500"><span class="choice__box"><span class="choice__text" data-i18n="bk.svc.exhibition">Exhibition or booth build</span><span class="choice__meta" data-i18n="bk.svc.exhibitionm">Design, build, crate, install</span></span></label>
+            </div>
+            <p class="field__error" data-error-for="services"></p>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="legend"><span data-i18n="bk.f.qty">Quantities you already know</span></legend>
+            <div class="field-grid field-grid--3">
+              <div class="field">
+                <label class="field__label" for="qtyChairs"><span data-i18n="bk.f.chairs">Chairs</span></label>
+                <input class="input" id="qtyChairs" name="qtyChairs" type="number" min="0" max="3000" step="10" inputmode="numeric" placeholder="0">
+              </div>
+              <div class="field">
+                <label class="field__label" for="qtyTables"><span data-i18n="bk.f.tables">Tables</span></label>
+                <input class="input" id="qtyTables" name="qtyTables" type="number" min="0" max="400" step="1" inputmode="numeric" placeholder="0">
+              </div>
+              <div class="field">
+                <label class="field__label" for="qtyMarquee"><span data-i18n="bk.f.marquee">Marquee m²</span></label>
+                <input class="input" id="qtyMarquee" name="qtyMarquee" type="number" min="0" max="2000" step="50" inputmode="numeric" placeholder="0">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="legend"><span data-i18n="bk.f.extras">Optional extras</span></legend>
+            <div class="chips-choices">
+              <label class="check"><input type="checkbox" name="extras" value="photography" data-price="1200"><span data-i18n="bk.x.photo">Photography coordination</span></label>
+              <label class="check"><input type="checkbox" name="extras" value="valet" data-price="1500"><span data-i18n="bk.x.valet">Valet &amp; parking</span></label>
+              <label class="check"><input type="checkbox" name="extras" value="security" data-price="1800"><span data-i18n="bk.x.security">Security liaison</span></label>
+              <label class="check"><input type="checkbox" name="extras" value="transport" data-price="900"><span data-i18n="bk.x.transport">Guest transport</span></label>
+              <label class="check"><input type="checkbox" name="extras" value="livestream" data-price="6500"><span data-i18n="bk.x.stream">Livestream &amp; hybrid AV</span></label>
+              <label class="check"><input type="checkbox" name="extras" value="translation" data-price="2200"><span data-i18n="bk.x.translate">Translation &amp; hosting</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="notes"><span data-i18n="bk.f.notes">Anything else we should know?</span></label>
+            <textarea class="input input--area" id="notes" name="notes" rows="4" maxlength="800" data-counter-for="notesCount" placeholder="Accessibility needs, religious or cultural requirements, load-in restrictions, guest names for the seating map…"></textarea>
+            <p class="field__hint"><span data-i18n="bk.f.chars">Characters</span>: <span id="notesCount">0</span>/800</p>
+          </div>
+        </section>
+
+        <!-- ===== STEP 4 ===== -->
+        <section class="panel" id="step-contact" data-panel="3" aria-labelledby="p3h" hidden>
+          <header class="panel__head">
+            <span class="panel__num">04</span>
+            <div>
+              <h2 class="panel__title" id="p3h" data-i18n="bk.p4.t">Who are we talking to?</h2>
+              <p class="panel__hint" data-i18n="bk.p4.h">One producer answers you directly. No call centre, no auto-reply chain.</p>
+            </div>
+          </header>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="fullName"><span data-i18n="bk.f.name">Full name</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="fullName" name="fullName" type="text" required autocomplete="name" maxlength="80">
+              <p class="field__error" data-error-for="fullName"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="role"><span data-i18n="bk.f.role">Role</span></label>
+              <input class="input" id="role" name="role" type="text" maxlength="60" placeholder="e.g. Events manager">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="company"><span data-i18n="bk.f.company">Company or family name</span></label>
+            <input class="input" id="company" name="company" type="text" maxlength="90" autocomplete="organization">
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label class="field__label" for="email"><span data-i18n="bk.f.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="email" name="email" type="email" required dir="ltr" autocomplete="email" placeholder="name@company.com">
+              <p class="field__error" data-error-for="email"></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="phone"><span data-i18n="bk.f.phone">Mobile (Saudi)</span> <span class="req" aria-hidden="true">*</span></label>
+              <input class="input" id="phone" name="phone" type="tel" required dir="ltr" inputmode="tel" autocomplete="tel" placeholder="05X XXX XXXX">
+              <p class="field__error" data-error-for="phone"></p>
+            </div>
+          </div>
+
+          <fieldset class="fieldset">
+            <legend class="legend"><span data-i18n="bk.f.pref">Preferred contact</span></legend>
+            <div class="choices choices--row">
+              <label class="choice"><input type="radio" name="prefer" value="whatsapp" checked><span class="choice__box"><span class="choice__text">WhatsApp</span></span></label>
+              <label class="choice"><input type="radio" name="prefer" value="email"><span class="choice__box"><span class="choice__text">Email</span></span></label>
+              <label class="choice"><input type="radio" name="prefer" value="call"><span class="choice__box"><span class="choice__text" data-i18n="bk.f.call">Phone call</span></span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="source"><span data-i18n="bk.f.source">How did you hear about us?</span></label>
+            <select class="input input--select" id="source" name="source">
+              <option value="search" data-i18n="bk.f.s1">Google / search</option>
+              <option value="instagram" data-i18n="bk.f.s2">Instagram</option>
+              <option value="linkedin" data-i18n="bk.f.s3">LinkedIn</option>
+              <option value="referral" data-i18n="bk.f.s4">Referral by a client</option>
+              <option value="venue" data-i18n="bk.f.s5">Venue recommendation</option>
+              <option value="other" data-i18n="bk.f.s6">Other</option>
+            </select>
+          </div>
+
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span data-i18n="bk.f.consent">I agree that Sanad may contact me about this enquiry, and that my details are stored only to answer it.</span>
+          </label>
+          <p class="field__error" data-error-for="consent"></p>
+        </section>
+
+        <!-- ===== STEP 5 ===== -->
+        <section class="panel" id="step-review" data-panel="4" aria-labelledby="p4h" hidden>
+          <header class="panel__head">
+            <span class="panel__num">05</span>
+            <div>
+              <h2 class="panel__title" id="p4h" data-i18n="bk.p5.t">Check and send</h2>
+              <p class="panel__hint" data-i18n="bk.p5.h">One last read. Use the edit links if anything moved.</p>
+            </div>
+          </header>
+
+          <dl class="review" data-review></dl>
+
+          <label class="consent">
+            <input type="checkbox" name="confirm" required>
+            <span data-i18n="bk.f.confirm">Everything above is correct. I understand this is an enquiry, not a confirmed booking.</span>
+          </label>
+          <p class="field__error" data-error-for="confirm"></p>
+
+          <div class="notice">
+            <strong data-i18n="bk.notice.t">What happens after you send</strong>
+            <ol>
+              <li data-i18n="bk.notice1">A producer calls or messages you within one working day.</li>
+              <li data-i18n="bk.notice2">We check the date, the venue access window and the crew calendar.</li>
+              <li data-i18n="bk.notice3">You get a written proposal with a supplier-by-supplier budget.</li>
+              <li data-i18n="bk.notice4">25% of the total books the date once you approve it.</li>
+            </ol>
+          </div>
+        </section>
+
+        <nav class="pager" data-pager>
+          <button type="button" class="btn btn--ghost" data-prev hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="inline-size:1.1rem"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="bk.back">Back</span>
+          </button>
+          <span class="pager__spacer"></span>
+          <button type="button" class="btn btn--ghost" data-clear hidden data-i18n="bk.clear">Clear form</button>
+          <button type="button" class="btn btn--gold" data-next>
+            <span data-i18n="bk.next">Continue</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="inline-size:1.1rem"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button type="submit" class="btn btn--gold" data-submit hidden data-i18n="bk.send">Send enquiry</button>
+        </nav>
+      </form>
+
+      <!-- ===== SUCCESS ===== -->
+      <section class="done" data-done hidden>
+        <div class="done__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" focusable="false"><circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="2" opacity=".4"/><path d="M20 33l8 8 17-18" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h2 data-i18n="done.t">Enquiry received</h2>
+        <p class="done__lede" data-done-lede></p>
+        <p class="done__ref"><span data-i18n="done.ref">Reference</span> <strong data-done-ref></strong></p>
+        <dl class="review review--done" data-done-summary></dl>
+        <div class="done__actions">
+          <a class="btn btn--gold" href="index.html#work" data-i18n="done.home">Back to the site</a>
+          <button type="button" class="btn btn--ghost" data-restart data-i18n="done.again">Book another date</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== ASIDE ===== -->
+    <aside class="bk-aside">
+      <div class="summary" data-summary>
+        <h2 class="summary__title"><span data-i18n="sum.t">Your enquiry</span> <span class="summary__live" data-i18n="sum.live">live</span></h2>
+        <dl class="summary__list" data-summary-list></dl>
+        <div class="summary__total">
+          <span data-i18n="sum.range">Working range</span>
+          <strong data-summary-total>SAR —</strong>
+        </div>
+        <p class="summary__note" data-i18n="sum.note">Indicative only, excludes VAT and third-party fees. Your written proposal is the binding number.</p>
+      </div>
+
+      <div class="aside-card">
+        <h3 data-i18n="sum.urg">Need it faster?</h3>
+        <p data-i18n="sum.urgd">Dates inside 21 days are usually possible — call the duty producer instead of waiting for the form.</p>
+        <a class="btn btn--ghost btn--block" href="tel:+966507446780" dir="ltr">+966 50 744 6780</a>
+        <a class="btn btn--ghost btn--block" href="https://wa.me/966507446780" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+        <button type="button" class="btn btn--gold btn--block" data-wa-open data-i18n="sum.bot">Chat the booking assistant</button>
+      </div>
+
+      <div class="aside-card aside-card--quote">
+        <p>“They redrew the floorplan twice because I changed the guest list twice, and never once looked annoyed.”</p>
+        <span data-i18n="sum.qt">Rawan A. · wedding, 620 guests</span>
+      </div>
+    </aside>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="shell footer__bottom" style="margin-block-start:0;border-block-start:0">
+    <p><span data-i18n="footer.cr">© 2026 Sanad Events Co. Jeddah. All rights reserved.</span></p>
+    <p><a href="index.html" data-i18n="done.home">Back to the site</a></p>
+  </div>
+</footer>
+
+<script type="module" src="assets/booking.js"></script>
+<script type="module" src="assets/chat.js"></script>
+</body>
+</html>

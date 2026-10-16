@@ -1,0 +1,10 @@
+{
+  "name": "sanad-events",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sanad - Event Planning & Supply, Jeddah, Saudi Arabia. Vanilla front-end portfolio with booking wizard.",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
