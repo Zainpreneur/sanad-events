@@ -4,7 +4,8 @@ A bilingual (EN / AR) marketing and booking site for **Sanad**, an event plannin
 supply house in Jeddah, Saudi Arabia. Zero runtime dependencies: plain HTML, CSS and ES
 modules, served by a ~70-line Node static server.
 
-**Live:** the published GitHub Pages URL is linked in the repository's *About* section.
+**Live:** <https://zainpreneur.github.io/sanad-events/> · booking form at
+<https://zainpreneur.github.io/sanad-events/booking.html>
 Booking line: **+966 50 744 6780** (WhatsApp-enabled).
 
 ## What is in here

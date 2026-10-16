@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zainpreneur.github.io/sanad-events/sitemap.xml
