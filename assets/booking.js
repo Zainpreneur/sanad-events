@@ -20,7 +20,7 @@ const todayISO = () => new Date().toISOString().slice(0, 10);
    -------------------------------------------------------------------------- */
 const COPY = {
   en: {
-    'bk.eyebrow': 'Booking form · 4 minutes · no obligation',
+    'bk.eyebrow': 'Booking form, 4 minutes, no obligation',
     'bk.title': 'Book Sanad',
     'bk.lede': 'Six short steps. The cost range on the right updates as you type, so you leave with a working number even before we reply. Nothing is confirmed until a producer signs the production sheet.',
     'bk.f1': 'Working day reply',
@@ -243,7 +243,7 @@ const COPY = {
   },
 
   ar: {
-    'bk.eyebrow': 'نموذج الحجز · ٤ دقائق · بلا التزام',
+    'bk.eyebrow': 'نموذج الحجز, ٤ دقائق, بلا التزام',
     'bk.title': 'احجز سند',
     'bk.lede': 'ست خطوات قصيرة. مدى التكلفة على اليمين يتحدث معك أثناء الكتابة، فتخرج برقم أولي قبل أن نرد. ولا شيء يُعتبر مؤكدًا قبل أن يوقّع المنتج ورقة الإنتاج.',
     'bk.f1': 'رد خلال يوم عمل',

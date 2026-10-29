@@ -66,7 +66,7 @@ const DICT = {
     'nav.faq': 'FAQ',
     'nav.book': 'Book a date',
 
-    'hero.eyebrow': 'Jeddah · Kingdom of Saudi Arabia · Since 2014',
+    'hero.eyebrow': 'Jeddah, Kingdom of Saudi Arabia, Since 2014',
     'hero.title': 'We build the day they will still talk about in ten years',
     'hero.lede': 'Sanad is a planning house and an event supply warehouse under one roof. Concept, drawings, décor, staging, sound, lighting, marquees, furniture, hospitality staff — sourced, installed and struck by a single accountable team.',
     'hero.cta1': 'Start your booking',
@@ -294,7 +294,7 @@ const DICT = {
     'nav.faq': 'أسئلة شائعة',
     'nav.book': 'احجز موعدك',
 
-    'hero.eyebrow': 'جدة · المملكة العربية السعودية · منذ ٢٠١٤',
+    'hero.eyebrow': 'جدة, المملكة العربية السعودية, منذ ٢٠١٤',
     'hero.title': 'نصنع ليلة لا تنتهي ذكراها بعد عشر سنوات',
     'hero.lede': 'سند مكتب تخطيط ومنزل تجهيزات للمناسبات تحت سقف واحد. الفكرة والرسومات والديكور والمنصة والصوت والإضاءة والخيام والأثاث وطاقم الضيافة — نشتريها ونركّبها ونفكّها بفريق واحد مسؤول.',
     'hero.cta1': 'ابدأ الحجز',

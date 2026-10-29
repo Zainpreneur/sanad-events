@@ -411,8 +411,7 @@ body.has-pointer .cursor-glow { opacity: 1; }
 .section__eyebrow {
   margin: 0 0 var(--space-3);
   font-size: 0.75rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
+  letter-spacing: 0.22em;
   color: var(--gold-500);
   font-weight: 600;
 }
@@ -430,8 +429,7 @@ html[lang="ar"] .section__eyebrow { letter-spacing: 0.1em; }
   border-radius: var(--r-pill);
   background: rgba(224, 198, 141, 0.07);
   font-size: 0.74rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  letter-spacing: 0.14em;
   color: var(--gold-200);
   font-weight: 500;
 }
@@ -1067,8 +1065,7 @@ html[dir="rtl"] .step.is-active { transform: translateX(-6px); }
   padding-block-end: 1.2rem;
   border-block-end: 1px dashed rgba(224, 198, 141, 0.25);
   font-size: 0.85rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  letter-spacing: 0.1em;
   color: var(--text-mute);
 }
 .tier__price b { font-family: var(--font-display); font-size: 2.6rem; line-height: 1; color: var(--gold-200); letter-spacing: 0; }
