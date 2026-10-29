@@ -538,28 +538,14 @@ const initLang = () => {
    2. Scroll reveal + stagger
    ========================================================================== */
 const initReveal = () => {
+  // No per-section scroll reveal: sections are static (`.reveal` is instant).
+  // The only orchestrated motion is the hero load reveal, handled in CSS via
+  // `.reveal--load` keyframes (reduced-motion respected there).
   $$('[data-stagger]').forEach((group) => {
     Array.from(group.children).forEach((child, i) => {
       child.style.setProperty('--rd', `${Math.min(i * 70, 560)}ms`);
     });
   });
-
-  const items = $$('.reveal, [data-split]');
-  if (REDUCED.matches || !('IntersectionObserver' in window)) {
-    items.forEach((el) => el.classList.add('is-in'));
-    return;
-  }
-  const io = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('is-in');
-        io.unobserve(entry.target);
-      });
-    },
-    { rootMargin: '0px 0px -12% 0px', threshold: 0.12 }
-  );
-  items.forEach((el) => io.observe(el));
 };
 
 /* ==========================================================================

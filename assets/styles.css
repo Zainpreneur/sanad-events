@@ -1350,15 +1350,6 @@ html[dir="rtl"] .step.is-active { transform: translateX(-6px); }
 .lightbox__btn--prev { inset-block-start: 50%; inset-inline-start: -1.2rem; translate: 0 -50%; }
 .lightbox__btn--next { inset-block-start: 50%; inset-inline-end: -1.2rem; translate: 0 -50%; }
 
-/* ---------- 21. Scroll reveal ---------- */
-.reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
-  transition-delay: var(--rd, 0s);
-}
-.reveal.is-in { opacity: 1; transform: none; }
-
 .split__word {
   display: inline-block;
   overflow: hidden;
@@ -1366,13 +1357,50 @@ html[dir="rtl"] .step.is-active { transform: translateX(-6px); }
   padding-block: 0.12em;
   margin-block: -0.12em;
 }
+/* Split words are visible by default (sections show their text immediately).
+   Only the hero load reveal slides them up once — the single orchestrated
+   moment; every other section stays static instead of fade-and-slide-up. */
 .split__inner {
   display: inline-block;
-  transform: translateY(115%);
+  transform: none;
   transition: transform 1.05s var(--ease-out);
   transition-delay: var(--d, 0s);
 }
 .is-in .split__inner { transform: none; }
+
+/* ---------- 21. Scroll reveal ---------- */
+/* `.reveal` is now static: no fade-and-slide-up entrance on every section —
+   that scattered effect is the generic default the design skill flags.
+   Sections appear as soon as they're in the DOM. */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* Single orchestrated load reveal — hero eyebrow + headline only */
+.reveal--load {
+  opacity: 0;
+  animation: reveal-load 0.9s var(--ease-out) forwards;
+}
+.reveal--load .split__inner {
+  opacity: 0;
+  transform: translateY(115%);
+  transition: none;
+  animation: split-load 1.05s var(--ease-out) forwards;
+  animation-delay: var(--d, 0s);
+}
+@keyframes reveal-load { to { opacity: 1; } }
+@keyframes split-load { to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal--load,
+  .reveal--load .split__inner {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 
 /* ---------- 22. Breakpoints ---------- */
 @media (min-width: 40rem) {
