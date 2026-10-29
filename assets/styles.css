@@ -248,7 +248,7 @@ body.has-pointer .cursor-glow { opacity: 1; }
   box-shadow: 0 16px 40px -20px rgba(0, 0, 0, 0.8);
 }
 
-.btn--sm { padding: 0.6rem 1.1rem; font-size: 0.875rem; }
+.btn--sm { padding: 0.7rem 1.1rem; font-size: 0.875rem; }
 .btn--lg { padding: 1.05rem 2.1rem; font-size: 1rem; }
 .btn--block { inline-size: 100%; }
 
@@ -379,7 +379,7 @@ body.has-pointer .cursor-glow { opacity: 1; }
   background: rgba(255, 255, 255, 0.03);
 }
 .lang__btn {
-  padding: 0.35rem 0.7rem;
+  padding: 0.5rem 0.7rem;
   border: 0;
   border-radius: var(--r-pill);
   background: transparent;
@@ -1121,7 +1121,7 @@ html[dir="rtl"] .step.is-active { transform: translateX(-6px); }
 .quotes__controls { display: flex; align-items: center; gap: 1rem; margin-block-start: 2rem; }
 .dots { display: flex; gap: 0.4rem; }
 .dot {
-  inline-size: 0.55rem; block-size: 0.55rem;
+  inline-size: 1.5rem; block-size: 1.5rem;
   padding: 0;
   border: 0;
   border-radius: var(--r-pill);

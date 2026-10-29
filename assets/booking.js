@@ -140,6 +140,7 @@ const COPY = {
     'bk.step': 'Step',
     'bk.back': 'Back',
     'bk.clear': 'Clear form',
+    'bk.clear-confirm': 'Clear all your answers? The draft on this device will be lost.',
     'bk.next': 'Continue',
     'bk.send': 'Send enquiry',
     'done.t': 'Enquiry received',
@@ -362,6 +363,7 @@ const COPY = {
     'bk.step': 'الخطوة',
     'bk.back': 'رجوع',
     'bk.clear': 'مسح النموذج',
+    'bk.clear-confirm': 'هل تمسح جميع إجاباتك؟ ستُفقد المسودة المحفوظة على هذا الجهاز.',
     'bk.next': 'متابعة',
     'bk.send': 'أرسل الطلب',
     'done.t': 'وصلنا طلبك',
@@ -984,7 +986,9 @@ const init = () => {
 
   nextBtn.addEventListener('click', goNext);
   prevBtn.addEventListener('click', () => show(current - 1));
-  clearBtn.addEventListener('click', clearForm);
+  clearBtn.addEventListener('click', () => {
+    if (confirm(t('bk.clear-confirm'))) clearForm();
+  });
   stepButtons.forEach((btn) => btn.addEventListener('click', () => show(Number(btn.dataset.goto))));
   $$('[data-restart]').forEach((btn) => btn.addEventListener('click', clearForm));
 
